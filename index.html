@@ -27,24 +27,44 @@
                 border-style: solid;
             }
         </style>
+        <script>
+            window.onload = (event) => {
+               let date = new Date()
+               let years  = date.getFullYear() - 2015
+               let month  = date.getMonth() -  5 + 1
+               let str = ''
+               if(month < 0){
+                 str = 'With ' + years + ' years and ' +(12 + month)+' months'
+               }else if(month ==0){
+                 str = 'With ' + years + ' years '
+               }
+               else if(month > 0  && month  < 4){
+                 str = 'With ' + years + '+ years '
+               }else{
+                str = 'With ' + years + ' years and ' +month+' months'
+               }
+               document.getElementById('#experience').textContent = str
+
+            };
+        </script>
     </head>
     <body>
         <div style="padding: 20px;">
             <img src="https://avatars.githubusercontent.com/u/3824845?v=4" id="profilepic"/>
         </div>
-        
+
         <h1>
             Hello! I am Mudit Sen, An Android Developer.
         </h1>
 
         <h3>
-            SUMMARY 
+            SUMMARY
         </h3>
         <p>
-            I am working as <b>Android Developer(SDE III)</b> at Airtel X Labs. <b>With 7+ years</b> of experience as a developer,
-            I am quite proficient in <b>Java, Kotlin, TypeScript (React-Native)</b> for <b>Android Application Development</b>. 
-            I have good knowledge of <b>Data Structure and Algorithms.</b> 
-            I have used various design patterns and studied various software architectural patterns. 
+            I am working as <b>Android Developer(SDE III)</b> at Airtel X Labs. <b><span id="#experience">With 7+ years</span></b> of experience as a developer,
+            I am quite proficient in <b>Java, Kotlin, TypeScript (React-Native)</b> for <b>Android Application Development</b>.
+            I have good knowledge of <b>Data Structure and Algorithms.</b>
+            I have used various design patterns and studied various software architectural patterns.
             I write robust and scalable code and am always ready to learn new ways to enhance my skills.
 
         </p>
@@ -57,7 +77,7 @@
                 <h4>
                     2019 - Present <span>Airtel X Labs</span>
                 </h4>
-            
+
                 <ol>
                     <li>Designed and Developed Airtel Home Page</li>
                     <li>Worked on React Native Projects</li>
@@ -69,7 +89,7 @@
                 <h4>
                     2018-2019  <span>Paytm</span>
                 </h4>
-            
+
                 <ol>
                     <li>Developed and managed Native Payment SDK</li>
                     <li>Added Offers and Convenience fee support on Android PG</li>
@@ -81,7 +101,7 @@
                 <h4>
                     2017 - 2018 <span>Myntra-Jabong</span>
                 </h4>
-            
+
                 <ol>
                     <li>Recently Viewed Framework</li>
                     <li>Switch Store Framework</li>
@@ -98,7 +118,7 @@
     <br/>
     <div>
         <h3>
-            PROJECTS 
+            PROJECTS
         </h3>
         <h4>
             Cryptogram | Flicksagram: <a href="https://play.google.com/store/apps/details?id=com.mudit.cryptogram">Download Now</a>
@@ -107,7 +127,7 @@
     <br/>
     <div>
         <h3>
-            SOCIALS 
+            SOCIALS
         </h3>
         <h4>
             Medium: <a href="https://medium.com/@muditsen">Read Articles</a>
@@ -122,7 +142,7 @@
     <br/>
     <div>
         <h3>
-            CONNECT 
+            CONNECT
         </h3>
         <h4>
             Email Me: <a href="mailto:someone@example.com">Send email</a></p>
